@@ -1,150 +1,4 @@
 @charset "UTF-8";
-/* line 29, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-*, ::after, ::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* line 34, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-html {
-  font-size: 62.5%;
-}
-
-/* line 37, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: #777777;
-  font-size: 1.6rem;
-  letter-spacing: .2rem;
-  padding: 5rem;
-  background-color: #ffffff;
-}
-
-/* line 46, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.container {
-  background-color: #F7F7F7;
-}
-
-/* line 49, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.header {
-  position: relative;
-  height: 95vh;
-  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-}
-
-/* line 54, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.header__logo {
-  position: absolute;
-  left: 5rem;
-  top: 5rem;
-  height: 7rem;
-  width: 5.6rem;
-}
-
-/* line 60, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.header__box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-}
-
-/* line 67, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.title-first {
-  color: #ffffff;
-  font-family: 'Roboto';
-}
-
-/* line 70, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.title-first__main {
-  display: block;
-  font-weight: 800;
-  font-size: 5rem;
-  line-height: 6rem;
-  letter-spacing: 1rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  animation: leftToRight;
-  animation-duration: 1.7s;
-  animation-delay: 1s;
-  animation-timing-function: ease;
-  backface-visibility: hidden;
-}
-
-/* line 85, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.title-first__secondary {
-  display: block;
-  font-weight: 300;
-  font-size: 4rem;
-  line-height: 4.8rem;
-  letter-spacing: .2rem;
-  animation-name: RightToleft;
-  animation-duration: 1.7s;
-  animation-delay: 1s;
-  animation-timing-function: ease;
-  backface-visibility: hidden;
-  margin-bottom: 5rem;
-}
-
-/* line 99, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.btn:link, .btn:visited {
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #777777;
-  padding: 1.5rem 4rem;
-  background: #ffffff;
-  border-radius: 5rem;
-  transition: all .3s;
-  position: relative;
-  font-size: 2rem;
-}
-
-/* line 108, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.btn:hover {
-  transform: translateY(-0.4rem);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* line 111, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.btn:hover::after {
-  opacity: 0;
-  transform: scaleX(1.5) scaleY(1.7);
-}
-
-/* line 114, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.btn:active {
-  transform: translateY(-0.2rem);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* line 117, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.btn::after {
-  content: "";
-  background: #ffffff;
-  width: 100%;
-  height: 100%;
-  border-radius: 5rem;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s;
-}
-
-/* line 129, ../Сайт тура на воздушных шарах/src/sass/style.sass */
-.btn_animated {
-  animation: BtnToUp .5s ease-out .7s;
-  animation-fill-mode: backwards;
-}
-
 @keyframes BtnToUp {
   0% {
     opacity: 0;
@@ -182,6 +36,156 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+/* line 1, ../Сайт тура на воздушных шарах/src/sass/base/_base.sass */
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 6, ../Сайт тура на воздушных шарах/src/sass/base/_base.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 9, ../Сайт тура на воздушных шарах/src/sass/base/_base.sass */
+body {
+  padding: 5rem;
+  background-color: #ffffff;
+}
+
+/* line 13, ../Сайт тура на воздушных шарах/src/sass/base/_base.sass */
+.container {
+  background-color: #F7F7F7;
+}
+
+/* line 1, ../Сайт тура на воздушных шарах/src/sass/base/_typography.sass */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #777777;
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+}
+
+/* line 10, ../Сайт тура на воздушных шарах/src/sass/base/_typography.sass */
+.title-first {
+  color: #ffffff;
+  font-family: 'Roboto';
+}
+
+/* line 13, ../Сайт тура на воздушных шарах/src/sass/base/_typography.sass */
+.title-first__main {
+  display: block;
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  animation: leftToRight;
+  animation-duration: 1.7s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  backface-visibility: hidden;
+}
+
+/* line 28, ../Сайт тура на воздушных шарах/src/sass/base/_typography.sass */
+.title-first__secondary {
+  display: block;
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: .2rem;
+  animation-name: RightToleft;
+  animation-duration: 1.7s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  backface-visibility: hidden;
+  margin-bottom: 5rem;
+}
+
+/* line 5, ../Сайт тура на воздушных шарах/src/sass/components/_button.sass */
+.btn:link, .btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #777777;
+  padding: 1.5rem 4rem;
+  background: #ffffff;
+  border-radius: 5rem;
+  transition: all .3s;
+  position: relative;
+  font-size: 2rem;
+}
+
+/* line 14, ../Сайт тура на воздушных шарах/src/sass/components/_button.sass */
+.btn:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* line 17, ../Сайт тура на воздушных шарах/src/sass/components/_button.sass */
+.btn:hover::after {
+  opacity: 0;
+  transform: scaleX(1.5) scaleY(1.7);
+}
+
+/* line 20, ../Сайт тура на воздушных шарах/src/sass/components/_button.sass */
+.btn:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* line 23, ../Сайт тура на воздушных шарах/src/sass/components/_button.sass */
+.btn::after {
+  content: "";
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+/* line 35, ../Сайт тура на воздушных шарах/src/sass/components/_button.sass */
+.btn_animated {
+  animation: BtnToUp .5s ease-out .7s;
+  animation-fill-mode: backwards;
+}
+
+/* line 1, ../Сайт тура на воздушных шарах/src/sass/layout/_header.sass */
+.header {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+/* line 6, ../Сайт тура на воздушных шарах/src/sass/layout/_header.sass */
+.header__logo {
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+  height: 7rem;
+  width: 5.6rem;
+}
+
+/* line 12, ../Сайт тура на воздушных шарах/src/sass/layout/_header.sass */
+.header__box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
