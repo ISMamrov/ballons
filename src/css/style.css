@@ -294,6 +294,30 @@ body {
   transform: scale(0.95);
 }
 
+/* line 1, ../GitHub/ballons/src/sass/components/_adventure-cards.sass */
+.adventure-card {
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: .5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: .2s all;
+}
+
+/* line 8, ../GitHub/ballons/src/sass/components/_adventure-cards.sass */
+.adventure-card:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+/* line 10, ../GitHub/ballons/src/sass/components/_adventure-cards.sass */
+.adventure-card__icon {
+  font-size: 6rem;
+  background: linear-gradient(90deg, rgba(161, 79, 3, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
 /* line 1, ../GitHub/ballons/src/sass/layout/_grid.sass */
 .row {
   max-width: 114rem;
@@ -377,6 +401,24 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
+}
+
+/* line 1, ../GitHub/ballons/src/sass/pages/_home.sass */
+.section-about {
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+}
+
+/* line 5, ../GitHub/ballons/src/sass/pages/_home.sass */
+.section-adventure {
+  padding: 21rem 0;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/section-adventure.jpg) center/cover no-repeat;
+  transform: skewY(7deg);
+}
+
+/* line 9, ../GitHub/ballons/src/sass/pages/_home.sass */
+.section-adventure > * {
+  transform: skewY(-7deg);
 }
 
 /*# sourceMappingURL=style.css.map */
