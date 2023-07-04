@@ -318,6 +318,48 @@ body {
   display: inline-block;
 }
 
+/* line 1, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+.card-tour {
+  height: 50rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+
+/* line 6, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+.card-tour__side {
+  height: 50rem;
+  transition: .7s all ease-out;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+/* line 15, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+.card-tour__side_front {
+  background: yellow;
+}
+
+/* line 18, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+.card-tour__side_back {
+  background: green;
+  transform: rotateY(180deg);
+  background: linear-gradient(120deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+}
+
+/* line 24, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+.card-tour:hover .card-tour__side_front {
+  transform: rotateY(180deg);
+}
+
+/* line 26, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+.card-tour:hover .card-tour__side_back {
+  transform: rotateY(0deg);
+}
+
 /* line 1, ../GitHub/ballons/src/sass/layout/_grid.sass */
 .row {
   max-width: 114rem;
@@ -419,6 +461,11 @@ body {
 /* line 9, ../GitHub/ballons/src/sass/pages/_home.sass */
 .section-adventure > * {
   transform: skewY(-7deg);
+}
+
+/* line 12, ../GitHub/ballons/src/sass/pages/_home.sass */
+.section-tour {
+  padding-top: 21rem;
 }
 
 /*# sourceMappingURL=style.css.map */
