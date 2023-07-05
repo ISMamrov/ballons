@@ -352,12 +352,19 @@ body {
 
 /* line 24, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour:hover .card-tour__side_front {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 
 /* line 26, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour:hover .card-tour__side_back {
   transform: rotateY(0deg);
+}
+
+/* line 29, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+.card-tour__img {
+  background-blend-mode: hard-light;
+  height: 20rem;
+  background: #BA8554 url(../img/card-1.jpg) center/cover no-4;
 }
 
 /* line 1, ../GitHub/ballons/src/sass/layout/_grid.sass */
