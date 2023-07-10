@@ -549,7 +549,16 @@ body {
 /* line 1, ../GitHub/ballons/src/sass/components/_form.sass */
 .book {
   height: 50rem;
-  background: linear-gradient(115deg, rgba(255, 255, 255, 0.8) 0%, rgba(250, 247, 244, 0.9) 57%, rgba(186, 133, 84, 0.9) 57%, rgba(161, 79, 3, 0.9) 100%), url(../img/bg-form) center/cover no-repeat;
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0.8) 0%, rgba(250, 247, 244, 0.9) 57%, rgba(186, 133, 84, 0.8) 57.1%, rgba(161, 79, 3, 0.8) 100%), url(../img/bg-form.jpg) center/cover no-repeat;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+/* line 8, ../GitHub/ballons/src/sass/components/_form.sass */
+.form {
+  width: 60%;
+  padding-top: 5rem;
 }
 
 /* line 1, ../GitHub/ballons/src/sass/layout/_grid.sass */
