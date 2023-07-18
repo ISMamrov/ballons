@@ -783,6 +783,86 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* line 2, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__toggle {
+  display: none;
+}
+
+/* line 4, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__button {
+  background: #ffffff;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 7rem;
+  right: 7rem;
+  z-index: 200;
+}
+
+/* line 14, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__background {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background: radial-gradient(#BA8554, #A14F03);
+  position: fixed;
+  right: 8rem;
+  top: 8rem;
+  z-index: 100;
+  transform: scale(80);
+}
+
+/* line 24, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 150;
+}
+
+/* line 32, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+
+/* line 38, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__item {
+  text-align: center;
+}
+
+/* line 40, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+/* line 43, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__link:link, .navigation__link:visited {
+  font-size: 4rem;
+  color: #ffffff;
+  letter-spacing: .5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: linear-gradient(120deg, transparent 0%, transparent 50%, #ffffff 50%);
+  background-size: 220%;
+  padding: 1rem 2rem;
+  transition: all .4s;
+  display: inline-block;
+}
+
+/* line 55, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #A14F03;
+  transform: translateX(1rem);
+}
+
 /* line 1, ../GitHub/ballons/src/sass/layout/_header.sass */
 .header {
   position: relative;
