@@ -810,10 +810,11 @@ body {
   right: 8rem;
   top: 8rem;
   z-index: 100;
-  transform: scale(80);
+  /* transform: scale(80) */
+  transition: all .7s;
 }
 
-/* line 24, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 25, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__nav {
   height: 100vh;
   width: 100%;
@@ -821,28 +822,32 @@ body {
   top: 0;
   right: 0;
   z-index: 150;
+  transition: all 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  opacity: 0;
+  width: 0;
 }
 
-/* line 32, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 36, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__list {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
+  width: 100%;
 }
 
-/* line 38, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 43, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__item {
   text-align: center;
 }
 
-/* line 40, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 45, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__item:not(:last-child) {
   margin-bottom: 5rem;
 }
 
-/* line 43, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 48, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__link:link, .navigation__link:visited {
   font-size: 4rem;
   color: #ffffff;
@@ -856,11 +861,22 @@ body {
   display: inline-block;
 }
 
-/* line 55, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 60, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #A14F03;
   transform: translateX(1rem);
+}
+
+/* line 65, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__toggle:checked ~ .navigation__background {
+  transform: scale(80);
+}
+
+/* line 67, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__toggle:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1;
 }
 
 /* line 1, ../GitHub/ballons/src/sass/layout/_header.sass */
