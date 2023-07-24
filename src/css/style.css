@@ -795,26 +795,28 @@ body {
   width: 8rem;
   border-radius: 50%;
   position: fixed;
-  top: 7rem;
-  right: 7rem;
+  top: 8rem;
+  right: 8rem;
   z-index: 200;
+  text-align: center;
+  cursor: pointer;
 }
 
-/* line 14, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 16, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__background {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   background: radial-gradient(#BA8554, #A14F03);
   position: fixed;
-  right: 8rem;
-  top: 8rem;
+  right: 9rem;
+  top: 9rem;
   z-index: 100;
   transition: all .7s;
   /* transform: scale(80) */
 }
 
-/* line 25, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 27, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__nav {
   height: 100vh;
   position: fixed;
@@ -823,10 +825,10 @@ body {
   z-index: 150;
   opacity: 0;
   width: 0;
-  transition: all 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
-/* line 34, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 36, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__list {
   position: absolute;
   top: 50%;
@@ -836,17 +838,17 @@ body {
   width: 100%;
 }
 
-/* line 41, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 43, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__item {
   text-align: center;
 }
 
-/* line 43, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 45, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__item:not(:last-child) {
   margin-bottom: 5rem;
 }
 
-/* line 46, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 48, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__link:link, .navigation__link:visited {
   font-size: 4rem;
   color: #ffffff;
@@ -860,22 +862,81 @@ body {
   display: inline-block;
 }
 
-/* line 58, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 60, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #A14F03;
   transform: translateX(1rem);
 }
 
-/* line 63, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 65, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__toggle:checked ~ .navigation__background {
   transform: scale(80);
 }
 
-/* line 65, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+/* line 67, ../GitHub/ballons/src/sass/layout/_navigation.sass */
 .navigation__toggle:checked ~ .navigation__nav {
   width: 100%;
   opacity: 1;
+}
+
+/* line 71, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__icon {
+  position: relative;
+  margin-top: 41px;
+}
+
+/* line 74, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  width: 30px;
+  height: 2px;
+  background: #000000;
+  display: inline-block;
+}
+
+/* line 81, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__icon::before, .navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all .3s;
+}
+
+/* line 87, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__icon::before {
+  top: -8px;
+}
+
+/* line 89, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__icon::after {
+  top: 8px;
+}
+
+/* line 92, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__button:hover .navigation__icon::before {
+  top: -10px;
+}
+
+/* line 94, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__button:hover .navigation__icon::after {
+  top: 10px;
+}
+
+/* line 97, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__toggle:checked + .navigation__button .navigation__icon {
+  background: transparent;
+}
+
+/* line 99, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__toggle:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+/* line 102, ../GitHub/ballons/src/sass/layout/_navigation.sass */
+.navigation__toggle:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 /* line 1, ../GitHub/ballons/src/sass/layout/_header.sass */
