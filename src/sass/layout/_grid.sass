@@ -13,7 +13,7 @@
 .col-1-of-3
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3)
     @include respond(tab-land)
-        margin-right: calc((100% - 2 * #{2rem}) / 3)
+        width: calc((100% - 2 * #{2rem}) / 3)
 
 .col-2-of-3
     width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal})
@@ -35,5 +35,5 @@
     &:not(:last-child)
         margin-right: $gutter-horizontal
     @include respond(tab-land)
-        &:not(last-child)
+        &:not(:last-child)
             margin-right: 2rem

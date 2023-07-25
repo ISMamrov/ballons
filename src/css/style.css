@@ -828,7 +828,7 @@ body {
 @media (max-width: 1240px) {
   /* line 13, ../GitHub/ballons/src/sass/layout/_grid.sass */
   .col-1-of-3 {
-    margin-right: calc((100% - 2 * 2rem) / 3);
+    width: calc((100% - 2 * 2rem) / 3);
   }
 }
 
@@ -871,7 +871,7 @@ body {
 
 @media (max-width: 1240px) {
   /* line 38, ../GitHub/ballons/src/sass/layout/_grid.sass */
-  [class^="col-"]:not(last-child) {
+  [class^="col-"]:not(:last-child) {
     margin-right: 2rem;
   }
 }
