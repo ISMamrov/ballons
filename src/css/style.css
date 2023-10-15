@@ -471,11 +471,11 @@ body {
 @media (max-width: 900px) {
   /* line 1, ../GitHub/ballons/src/sass/components/_tour-card.sass */
   .card-tour {
-    height: 60rem;
+    height: auto;
   }
 }
 
-/* line 8, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 9, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__side {
   height: 50rem;
   transition: .7s all ease-out;
@@ -491,59 +491,85 @@ body {
 }
 
 @media (max-width: 900px) {
-  /* line 8, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+  /* line 9, ../GitHub/ballons/src/sass/components/_tour-card.sass */
   .card-tour__side {
-    height: 60rem;
+    height: auto;
+    position: relative;
   }
 }
 
-/* line 24, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+@media (max-width: 900px) {
+  /* line 24, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+  .card-tour__side_front {
+    padding-bottom: 13rem;
+  }
+}
+
+/* line 28, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__side_back {
   background: green;
   transform: rotateY(180deg);
   background: linear-gradient(120deg, #BA8554, #A14F03);
 }
 
-/* line 30, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+@media (max-width: 900px) {
+  /* line 28, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+  .card-tour__side_back {
+    transform: rotateY(0deg);
+    padding: 5rem;
+    padding-top: 12rem;
+    margin-top: -11rem;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  }
+}
+
+/* line 40, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour:hover .card-tour__side_front {
   transform: rotateY(-180deg);
 }
 
-/* line 32, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+@media (max-width: 900px) {
+  /* line 40, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+  .card-tour:hover .card-tour__side_front {
+    transform: rotateY(0deg);
+  }
+}
+
+/* line 45, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour:hover .card-tour__side_back {
   transform: rotateY(0deg);
 }
 
-/* line 35, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 48, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__img {
   background-blend-mode: hard-light;
   height: 21rem;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 
-/* line 39, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 52, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__img_1 {
   background: #BA8554 url(../img/card-1.jpg) center/cover no-repeat;
 }
 
-/* line 41, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 54, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__img_2 {
   background: #BA8554 url(../img/card-2.jpg) center/cover no-repeat;
 }
 
-/* line 43, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 56, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__img_3 {
   background: #BA8554 url(../img/card-3.jpg) center/cover no-repeat;
 }
 
 @media (max-width: 900px) {
-  /* line 35, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+  /* line 48, ../GitHub/ballons/src/sass/components/_tour-card.sass */
   .card-tour__img {
     height: 30rem;
   }
 }
 
-/* line 48, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 61, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__title {
   font-size: 2.8rem;
   letter-spacing: .2rem;
@@ -556,20 +582,20 @@ body {
 }
 
 @media (max-width: 900px) {
-  /* line 48, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+  /* line 61, ../GitHub/ballons/src/sass/components/_tour-card.sass */
   .card-tour__title {
     top: 25rem;
     font-size: 3.8rem;
   }
 }
 
-/* line 60, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 73, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__span {
   background: linear-gradient(90deg, #BA8554, #A14F03);
   padding: 1rem 2rem .3rem 2rem;
 }
 
-/* line 64, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 77, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__span_2 {
   position: absolute;
   top: 3.4rem;
@@ -579,13 +605,13 @@ body {
 }
 
 @media (max-width: 900px) {
-  /* line 64, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+  /* line 77, ../GitHub/ballons/src/sass/components/_tour-card.sass */
   .card-tour__span_2 {
     top: 4.4rem;
   }
 }
 
-/* line 73, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 86, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__descr ul {
   list-style: none;
   margin: 0 auto;
@@ -593,7 +619,7 @@ body {
   text-align: center;
 }
 
-/* line 78, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 91, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__descr ul li {
   font-size: 1.6rem;
   letter-spacing: .2rem;
@@ -604,20 +630,20 @@ body {
 }
 
 @media (max-width: 1240px) {
-  /* line 78, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+  /* line 91, ../GitHub/ballons/src/sass/components/_tour-card.sass */
   .card-tour__descr ul li {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 900px) {
-  /* line 78, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+  /* line 91, ../GitHub/ballons/src/sass/components/_tour-card.sass */
   .card-tour__descr ul li {
     font-size: 2rem;
   }
 }
 
-/* line 91, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 104, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__backSide-box {
   position: absolute;
   top: 50%;
@@ -625,7 +651,18 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* line 96, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+@media (max-width: 900px) {
+  /* line 104, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+  .card-tour__backSide-box {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    text-align: center;
+  }
+}
+
+/* line 115, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__text {
   margin-bottom: 8rem;
   letter-spacing: .2rem;
@@ -634,13 +671,13 @@ body {
   color: #ffffff;
 }
 
-/* line 102, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 121, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__text_1 {
   font-size: 1.6rem;
   font-weight: 300;
 }
 
-/* line 105, ../GitHub/ballons/src/sass/components/_tour-card.sass */
+/* line 124, ../GitHub/ballons/src/sass/components/_tour-card.sass */
 .card-tour__text_2 {
   font-size: 6rem;
   font-weight: 500;
@@ -1073,11 +1110,12 @@ body {
 @media (max-width: 900px) {
   /* line 9, ../GitHub/ballons/src/sass/layout/_footer.sass */
   .footer__item {
-    margin: 0 3rem 3rem 0;
+    margin: 0;
+    padding: 2rem;
   }
 }
 
-/* line 19, ../GitHub/ballons/src/sass/layout/_footer.sass */
+/* line 20, ../GitHub/ballons/src/sass/layout/_footer.sass */
 .footer__link:link, .footer__link:visited {
   color: #777777;
   text-decoration: none;
@@ -1089,7 +1127,7 @@ body {
   transition: all .3s;
 }
 
-/* line 29, ../GitHub/ballons/src/sass/layout/_footer.sass */
+/* line 30, ../GitHub/ballons/src/sass/layout/_footer.sass */
 .footer__link:hover {
   transform: rotate(5deg) scale(1.2);
   color: #A14F03;
@@ -1343,6 +1381,13 @@ body {
 .section-book {
   padding: 10rem;
   background: linear-gradient(90deg, #BA8554, #A14F03);
+}
+
+@media (max-width: 900px) {
+  /* line 28, ../GitHub/ballons/src/sass/pages/_home.sass */
+  .section-book {
+    padding: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
